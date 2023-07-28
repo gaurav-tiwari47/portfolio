@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mullish:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow:hidden;
+      background: #F5F5F5;
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 0px;
+      background: linear-gradient(to right, #333 10% , #fff );
+      height: 90px;
+      width: 100%;
+    }
+    header h1{
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+    section {
+      display: grid;
+      padding: 100px 350px;
+    }
+    .project {
+      width: 300px;
+      margin: 10px;
+      padding: 15px;
+      border: 3px solid #333;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s, background-color 0.3s ease-in-out;
+    }
+    .project:hover {
+        transform: scale(1.11); 
+        background-color: #FFE5AD;
+        box-shadow: 0 4px 8px rgba(7, 7, 7, 0.3); 
+    }
+    .project img {
+      max-width: 20px;
+      height: auto;
+    }
+    .project h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    .project p {
+      margin-top: 5px;
+      font-size: 1rem;
+    }
+    a {
+        margin-right: 5px;
+    }
+    .demo {
+        border:2px solid  #333;
+        border-radius: 5px;
+        padding:0 2px;
+        color:black;
+        text-decoration:none ;
+        transition: transform 0.3s;
+    }
+    .demo:hover {
+        transform: scale(1.2);
+    }
+    .source-code {
+        border:2px solid  #333;
+        border-radius: 5px;
+        padding:0 2px;
+        color:black;
+        text-decoration:none ;
+        transition: transform 0.3s ease;
+    }
+    .home{
+        margin-top:1%;
+        margin-left:2%;
+        border-radius: 50px;
+        background:#fff;
+        transition: transform 0.3s;
+    }
+    .home:hover {
+        transform: scale(1.2);
+    }
+    li {
+        position: relative;
+        padding-left: 25px;
+        line-height: 1.6;
+        list-style: none;
+    }
+    li::before {
+        content: '→';
+        position: absolute;
+        left:0;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates two columns with equal width */
+        grid-gap: 10px; /* Adjust this value to set the gap between grid items */
+    }
+    .grid-item {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="home"><button>Homepage</button></a>
+    <h1>My Projects</h1>
+  </header>
+  <section class="grid-container">
+    <!--Weather App-->
+    <div class="project">
+      <img src="images/weather-appimg.webp" alt="/">
+      <h3>Weather App</h3>
+      <ul>
+        <li>Created Using HTML,CSS,Reactjs, RapidAPI</li>
+        <li>Can generate 100 responeses per day across the globe</li>
+      </ul>
+      <a href="https://gaurav-tiwari47.github.io/weather-app/"  target="_blank" class="demo">Demo</a> | <a class="source-code" href="https://github.com/gaurav-tiwari47/weather-app"  target="_blank">Source Code</a>
+    </div>
+    <!--Spotify Clone-->
+    <div class="project">
+      <img src="images/spotify_logo.png" alt="/">
+      <h3>Spotify Clone</h3>
+      <ul>
+        <li>Created Using HTML, CSS, Bootstrap, Reactjs</li>
+        <li>Music Library contains 100+ songs with clickable buttons</li>
+      </ul>
+      <a href="spotify_clone_demo/" target="_blank"  class="demo">Demo</a> | <a class="source-code" href="https://github.com/saurav-tiwari03/" target="_blank">Source Code</a>
+    </div>
+    <!--Youtube-->
+    <div class="project">
+        <img src="images/ytimage.png" alt="/">
+        <h3>Youtube Edited Videos</h3>
+        <ul>
+          <li>Created GameVideos and some beatsync montages</li>
+        </ul>
+        <a href="https://www.youtube.com/@DynamicbeastGaming" target="_blank"  class="demo">Channel</a> | <a class="source-code" href="https://www.youtube.com/watch?v=DJ4_9QyRHNM" target="_blank">Sample Video</a>
+      </div>
+      <!--Instagram-->
+      <div class="project">
+        <img src="images/instaimage.jpeg" alt="/">
+        <h3>Instagram Edited Reels</h3>
+        <ul>
+          <li>Made Video Edits on Movie Scene and Celebs</li>
+        </ul>
+        <a href="https://www.instagram.com/tiwaariji.editz/" target="_blank"  class="demo">Account</a> | <a class="source-code" href="https://www.instagram.com/p/ChZvIdxjuVk/" target="_blank">Sample Reel</a>
+      </div>
+  </section>
+</body>
+</html>
